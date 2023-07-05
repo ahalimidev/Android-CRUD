@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6750A3"
+    android:orientation="vertical"
+    tools:context=".EditData">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Android CRUD"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_white_top"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:text="Nama Lengkap"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:textColor="#000F15"
+            android:hint="Isi Nama Lengkap"
+            android:id="@+id/et_nama_lengkap"
+            android:textSize="14sp"
+            android:background="#8FE3E6E8"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:text="Nomor HP"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:textColor="#000F15"
+            android:hint="Isi Nomor HP"
+            android:textSize="14sp"
+            android:id="@+id/et_nomor_hp"
+            android:background="#8FE3E6E8"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:text="Nomor HP"/>
+        <RadioGroup
+            android:id="@+id/rg_jenis_kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:id="@+id/rg_jenis_kelamin_l"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"/>
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/rg_jenis_kelamin_p"
+                android:text="Perempuan"/>
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_simpan"
+            android:textColor="#fff"
+            android:id="@+id/bt_simpan"
+            android:layout_marginTop="20dp"
+            android:text="Simpan"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

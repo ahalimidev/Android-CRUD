@@ -3,7 +3,7 @@ package com.example.myapplication.model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class ArrayUser {
+class ObjectUser {
     @SerializedName("success")
     @Expose
     var success: Int? = 0
@@ -14,5 +14,5 @@ class ArrayUser {
 
     @SerializedName("data")
     @Expose
-    var data: ArrayList<ModelUser>? = null
+    var data: ModelUser? = null
 }

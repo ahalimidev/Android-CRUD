@@ -6,6 +6,8 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -25,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="8dp"
                 android:paddingBottom="4dp"
+                android:id="@+id/tv_nama_lengkap"
                 android:text="Nama Lengkap"
                 android:textColor="@color/black"
                 android:textSize="14.5sp"
@@ -35,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="13dp"
                 android:text="Nomor HP"
+                android:id="@+id/tv_nomor_hp"
                 android:textColor="@color/black"
                 android:textSize="14.5sp" />
 
@@ -51,6 +55,7 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="100dp"
                     android:layout_height="35dp"
+                    android:id="@+id/bt_edit"
                     android:layout_margin="5dp"
                     android:background="@drawable/button_simpan"
                     android:elevation="2dp"
@@ -64,6 +69,7 @@
                     android:background="@drawable/button_detail"
                     android:elevation="2dp"
                     android:text="Detail"
+                    android:id="@+id/bt_detail"
                     android:textColor="#ffffff" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -73,6 +79,7 @@
                     android:background="@drawable/button_keluar"
                     android:elevation="2dp"
                     android:text="Hapus"
+                    android:id="@+id/bt_hapus"
                     android:textColor="#ffffff" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>

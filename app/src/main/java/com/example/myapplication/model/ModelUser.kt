@@ -3,7 +3,7 @@ package com.example.myapplication.model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class ListUser {
+class ModelUser {
     @SerializedName("id_crud")
     @Expose
     var id_crud: String? = null
